@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COTIZADOR - PUERTO PESQUERO CHANCAY</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <input type="checkbox" id="modal-check" class="modal-check">
+
+    <header>
+        <div class="brand">
+            <img src="img/logo3.jpg.png" alt="Logo Puerto Pesquero Chancay" class="brand-logo">
+            <h1>Puerto Pesquero Chancay</h1>
+        </div>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="basecentral.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="cotizador.html" class="active">Cotizador</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="pronto.html">Próximamente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <div class="cotizador-encabezado">
+                <span class="hero-tag" style="margin-bottom: 8px;">Cotización y Reserva Directa</span>
+                <h2>Cotizador Rápido de Equipos y Aparejos</h2>
+                <p>Arma tu lista de equipos y promociones, revisa descuentos por compras desde S/ 500 y confirma tu cotización al instante.</p>
+            </div>
+
+            <div class="cotizador-grid">
+                <form id="form-cotizador" class="cotizador-form-box">
+                    <h3>1. Agrega Equipos a tu Lista</h3>
+
+                    <label for="producto-cotizar">Selecciona un equipo o promoción:</label>
+                    <select id="producto-cotizar">
+                        <option value="573.30" data-nombre="Caña Cinnetic Rextail Sea Bass 270MH" data-stock="6">Caña Cinnetic Rextail Sea Bass 270MH — S/ 573.30 (Stock: 6)</option>
+                        <option value="959.00" data-nombre="Caña de Spinning Raycast XBR Sea Bass 270 MH" data-stock="4">Caña de Spinning Raycast XBR Sea Bass 270 MH — S/ 959.00 (Stock: 4)</option>
+                        <option value="390.00" data-nombre="Caña Shimano Exage 90MH de Costa" data-stock="7">Caña Shimano Exage 90MH de Costa — S/ 390.00 (Stock: 7)</option>
+                        <option value="256.00" data-nombre="Carrete Shimano Sienna 4000 FG" data-stock="9">Carrete Shimano Sienna 4000 FG — S/ 256.00 (Stock: 9)</option>
+                        <option value="480.00" data-nombre="Carrete Penn Pursuit IV 6000" data-stock="5">Carrete Penn Pursuit IV 6000 — S/ 480.00 (Stock: 5)</option>
+                        <option value="510.00" data-nombre="Carrete Surfcasting Long Cast 8000" data-stock="4">Carrete Surfcasting Long Cast 8000 — S/ 510.00 (Stock: 4)</option>
+                        <option value="85.00" data-nombre="Línea Multifilamento 8X 300m" data-stock="14">Línea Multifilamento 8X 300m — S/ 85.00 (Stock: 14)</option>
+                        <option value="45.00" data-nombre="Líder Fluorocarbono Invisible 50m" data-stock="12">Líder Fluorocarbono Invisible 50m — S/ 45.00 (Stock: 12)</option>
+                        <option value="36.00" data-nombre="Pack x6 Plomadas Pirámide y Estrella" data-stock="18">Pack x6 Plomadas Pirámide y Estrella — S/ 36.00 (Stock: 18)</option>
+                        <option value="72.00" data-nombre="Señuelo Minnow Profundidad 140mm" data-stock="11">Señuelo Minnow Profundidad 140mm — S/ 72.00 (Stock: 11)</option>
+                        <option value="65.00" data-nombre="Nasa Plegable para Cangrejo Violáceo" data-stock="8">Nasa Plegable para Cangrejo Violáceo — S/ 65.00 (Stock: 8)</option>
+                        <option value="95.00" data-nombre="Caja Organizadora Impermeable 3 Bandejas" data-stock="0">Caja Organizadora Impermeable 3 Bandejas — S/ 95.00 (Stock: 0)</option>
+                        <option value="120.00" data-nombre="Caja de Pesca Shimano" data-stock="10">Caja de Pesca Shimano — S/ 120.00 (Stock: 10)</option>
+                        <option value="110.00" data-nombre="Caja de Pesca Cinnetic" data-stock="10">Caja de Pesca Cinnetic — S/ 110.00 (Stock: 10)</option>
+                        <option value="60.00" data-nombre="Caja de Pesca Clásica" data-stock="10">Caja de Pesca Clásica — S/ 60.00 (Stock: 10)</option>
+                        <option value="210.00" data-nombre="Red Cortina Agallera 50m" data-stock="7">Red Cortina Agallera 50m — S/ 210.00 (Stock: 7)</option>
+                        <option value="165.00" data-nombre="Atarraya Artesanal 3.2m" data-stock="6">Atarraya Artesanal 3.2m — S/ 165.00 (Stock: 6)</option>
+                        <option value="340.00" data-nombre="Paño de Red Chinchorro 80m" data-stock="5">Paño de Red Chinchorro 80m — S/ 340.00 (Stock: 5)</option>
+                        <option value="42.00" data-nombre="Boya Esférica Reforzada 20cm" data-stock="15">Boya Esférica Reforzada 20cm — S/ 42.00 (Stock: 15)</option>
+                        <option value="78.00" data-nombre="Boya de Marcación Naranja" data-stock="9">Boya de Marcación Naranja — S/ 78.00 (Stock: 9)</option>
+                        <option value="32.00" data-nombre="Pack x4 Boyas de Pesca" data-stock="12">Pack x4 Boyas de Pesca — S/ 32.00 (Stock: 12)</option>
+                        <option value="4200.00" data-nombre="Motor Fuera de Borda 15 HP" data-stock="3">Motor Fuera de Borda 15 HP — S/ 4,200.00 (Stock: 3)</option>
+                        <option value="1350.00" data-nombre="Motor Náutico Eléctrico 55 lb" data-stock="4">Motor Náutico Eléctrico 55 lb — S/ 1,350.00 (Stock: 4)</option>
+                        <option value="195.00" data-nombre="Hélice de Aluminio 15 HP" data-stock="8">Hélice de Aluminio 15 HP — S/ 195.00 (Stock: 8)</option>
+                        <option value="720.00" data-nombre="Promo 1: Pack Doble de 2 Cañas" data-stock="5">Promo 1: Pack Doble de 2 Cañas — S/ 720.00 (Stock: 5)</option>
+                        <option value="880.00" data-nombre="Promo 2: Caña + Carrete + Cajas + Nasas" data-stock="3">Promo 2: Caña + Carrete + Cajas + Nasas — S/ 880.00 (Stock: 3)</option>
+                        <option value="340.00" data-nombre="Promo 3: Pack Faena Costera" data-stock="6">Promo 3: Pack Faena Costera — S/ 340.00 (Stock: 6)</option>
+                        <option value="1230.00" data-nombre="Promo 4: Combo Bote Ligero" data-stock="4">Promo 4: Combo Bote Ligero — S/ 1,230.00 (Stock: 4)</option>
+                    </select>
+
+                    <label for="cantidad-cotizar">Cantidad:</label>
+                    <input type="number" id="cantidad-cotizar" min="1" max="18" value="1">
+
+                    <div id="aviso-cotizador" class="aviso-barra"></div>
+
+                    <button type="submit" id="btn-agregar-cotizado" style="width: 100%; margin-top: 6px;">+ AGREGAR A MI COTIZACIÓN</button>
+                </form>
+
+                <div id="resultado-cotizacion" class="resumen-carrito">
+                    <h3>Cálculo del Equipo Actual</h3>
+                    <div class="resumen-fila">
+                        <span>Stock disponible:</span>
+                        <strong id="cot-stock">6</strong>
+                    </div>
+                    <div class="resumen-fila">
+                        <span>Precio unitario:</span>
+                        <strong id="cot-unitario">S/ 573.30</strong>
+                    </div>
+                    <div class="resumen-fila">
+                        <span>Cantidad:</span>
+                        <strong id="cot-cantidad">1</strong>
+                    </div>
+                    <div class="resumen-fila resumen-total">
+                        <span>Subtotal ítem:</span>
+                        <strong id="cot-total">S/ 573.30</strong>
+                    </div>
+                    <p class="cot-nota">* Por compras mayores o iguales a S/ 500.00 obtienes 10% de descuento automático en el resumen general.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>2. Resumen Acumulado y Confirmación</h2>
+            <p>Revisa todo lo que agregaste, elige tu zona de entrega en Chancay y registra tu cotización para coordinar directo con el vendedor.</p>
+
+            <div class="carrito-layout">
+                <form id="form-confirmar-cotizacion" class="cotizador-form-box" novalidate>
+                    <h3>Datos del Cliente</h3>
+
+                    <label for="nombre-cliente">Nombre completo:</label>
+                    <input type="text" id="nombre-cliente" placeholder="Ej. tu nombre!!">
+
+                    <label for="telefono-cliente">Teléfono / WhatsApp:</label>
+                    <input type="tel" id="telefono-cliente" placeholder="Ej. 999 999 999">
+
+                    <label for="zona-entrega">Zona o punto de entrega en Chancay:</label>
+                    <select id="zona-entrega">
+                        <option value="Puerto / Malecón Chancay">Puerto / Malecón Chancay (S/ 5.00)</option>
+                        <option value="Cercado de Chancay">Cercado de Chancay (S/ 8.00)</option>
+                        <option value="Zona Playa / Costa">Zona Playa / Costa (S/ 10.00)</option>
+                    </select>
+
+                    <label for="notas-pedido">Observaciones (opcional):</label>
+                    <textarea id="notas-pedido" rows="3" placeholder="Ej. Recojo por la mañana o referencia del punto"></textarea>
+
+                    <div id="mensaje-pedido" class="mensaje-pedido-box"></div>
+
+                    <button type="submit" class="btn-confirmar-pedido">CONFIRMAR COTIZACIÓN</button>
+                </form>
+
+                <aside class="resumen-carrito">
+                    <h3>Detalle General</h3>
+                    <div id="resumen-pedido-items">
+                        <p>Sin productos guardados aún.</p>
+                    </div>
+                    <div class="resumen-fila resumen-total" style="margin-top: 14px;">
+                        <span>Total a pagar:</span>
+                        <strong id="pedido-total">S/ 5.00</strong>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <h3>¡Cotización Registrada!</h3>
+            <p>Este es el resumen de lo que cotizaste:</p>
+            <div id="detalle-modal-pedido" class="modal-detalle"></div>
+            <p>Para coordinar el pago o entrega, escribe directo al vendedor:</p>
+            <span class="modal-numero">📱 +51 902 515 748</span>
+            <p><small>Atención inmediata en el Puerto de Chancay.</small></p>
+            <label for="modal-check" class="btn-cerrar-modal">CERRAR</label>
+        </div>
+    </div>
+
+    <footer>
+        <p>2026 Desarrollo de Entornos Web - Puerto Pesquero Chancay</p>
+        <p id="saludinhosmister" class="saludinhosmister">
+            Esta página está hecha por José Mathias Bautista Rea!! y Jordan Luis Mogollon Montesinos
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDIDO - PUERTO PESQUERO CHANCAY</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <input type="checkbox" id="modal-check" class="modal-check">
+
+    <header>
+        <div class="brand">
+            <img src="img/logo3.jpg.png" alt="Logo Puerto Pesquero Chancay" class="brand-logo">
+            <h1>Puerto Pesquero Chancay</h1>
+        </div>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="basecentral.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="cotizador.html">Cotizador</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="pedido.html" class="active">Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Confirmar Pedido</h2>
+            <p>Completa tus datos para registrar tu pedido y coordinar directo con el vendedor.</p>
+
+            <div class="carrito-layout">
+                <form id="form-pedido" class="cotizador-form-box" novalidate>
+                    <h3>Datos del Cliente</h3>
+
+                    <label for="nombre-cliente">Nombre completo:</label>
+                    <input type="text" id="nombre-cliente" placeholder="Ej. José Mathias Bautista">
+
+                    <label for="telefono-cliente">Teléfono / WhatsApp:</label>
+                    <input type="tel" id="telefono-cliente" placeholder="Ej. 987 654 321">
+
+                    <label for="zona-entrega">Zona o punto de entrega en Chancay:</label>
+                    <select id="zona-entrega">
+                        <option value="Puerto / Malecón Chancay">Puerto / Malecón Chancay</option>
+                        <option value="Cercado de Chancay">Cercado de Chancay</option>
+                        <option value="Zona Playa / Costa">Zona Playa / Costa</option>
+                    </select>
+
+                    <label for="notas-pedido">Observaciones (opcional):</label>
+                    <textarea id="notas-pedido" rows="3" placeholder="Ej. Recojo por la mañana o referencia del punto"></textarea>
+
+                    <div id="mensaje-pedido" class="mensaje-pedido-box"></div>
+
+                    <button type="submit" class="btn-confirmar-pedido">CONFIRMAR PEDIDO</button>
+                </form>
+
+                <aside class="resumen-carrito">
+                    <h3>Resumen del Pedido</h3>
+                    <div id="resumen-pedido-items">
+                        <p>No hay selección previa.</p>
+                    </div>
+                    <div class="resumen-fila resumen-total" style="margin-top: 14px;">
+                        <span>Total a pagar:</span>
+                        <strong id="pedido-total">S/ 0.00</strong>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <h3>¡Pedido Registrado!</h3>
+            <p>Esto es lo que ordenaste:</p>
+            <div id="detalle-modal-pedido" class="modal-detalle"></div>
+            <p>Para coordinar el pago o entrega, escribe directo al vendedor:</p>
+            <span class="modal-numero">📱 902 515 748 </span>
+            <p><small>Atención inmediata en el Puerto de Chancay.</small></p>
+            <label for="modal-check" class="btn-cerrar-modal">CERRAR</label>
+        </div>
+    </div>
+
+    <footer>
+        <p>2026 Desarrollo de Entornos Web - Puerto Pesquero Chancay</p>
+        <p id="saludinhosmister" class="saludinhosmister">
+            Esta página está hecha por José Mathias Bautista Rea!! y Jordan Luis Mogollon Montesinos
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
